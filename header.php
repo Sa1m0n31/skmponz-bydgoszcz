@@ -29,18 +29,9 @@
 
         <menu>
             <ul>
-                <li><a href="<?php echo home_url(); ?>">Strona główna</a></li>
-                <li><a href="#">Aktualności i wydarzenia</a></li>
-                <li><a href="#">Publikacje prasowe</a></li>
-                <li><a href="#">Historia Stowarzyszenia i Naszego Koła</a></li>
-                <li><a href="#">Statut/Zapisy</a></li>
-                <li><a href="<?php echo home_url() . '/udzial-w-misjach'; ?>">Udział w misjach</a></li>
-                <li><a href="#">Dzień Weterana w Bydgoszczy</a></li>
-                <li><a href="#">Wycieczka do Wiednia z okazji 333. rocznicy Wiktorii Wiedeńskiej</a></li>
-                <li><a href="#">Wycieczka do Wilna i Kowna</a></li>
-                <li><a href="#">Prace Zarządu Koła</a></li>
-                <li><a href="#">Komunikaty Organizacyjne</a></li>
-                <li><a href="#">Linki/Ustawy</a></li>
+                <?php
+                    wp_nav_menu(array('theme_location' => 'menu-1'));
+                ?>
             </ul>
         </menu>
 

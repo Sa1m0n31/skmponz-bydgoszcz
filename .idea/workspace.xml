@@ -2,59 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="577feca4-a579-48e9-a2ba-e975f3fd1270" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/afganistan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/albania.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/bosnia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/centralna-afryka.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/chorwacja.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/czad.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/egipt.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/etiopia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/gruzja.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/irak.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/jugoslawia.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/kambodza.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/kongo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/korea-pld.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/korea-pln.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/kosowo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/kuwejt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/liban.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-afganistan-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-afganistan-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-albania.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-czad-oraz-centralna-afryka.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-czad.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-egipt.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-etiopia.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-gruzja.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-irak.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-jugoslawia-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-jugoslawia-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-kambodza.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-kongo.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-korea.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-kosowo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-kuwejt.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-liban.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-nanibia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-sahara.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-syria.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-tadzykistan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-wietnam.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/misja-wks.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/nanibia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/sahara-zachodnia.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/syria.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/tajikistan.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/wietnam.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/wks.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page-udzial-w-misjach.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/arrow_duo_right.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive.php" beforeDir="false" afterPath="$PROJECT_DIR$/archive.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-udzial-w-misjach.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-udzial-w-misjach.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/single.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +17,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -84,7 +39,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../turzno" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -103,6 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610743583635</updated>
       <workItem from="1610743586408" duration="11342000" />
+      <workItem from="1610803800384" duration="8968000" />
     </task>
     <servers />
   </component>
@@ -119,6 +75,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
