@@ -29,12 +29,12 @@
 
         <menu>
             <ul>
-                <li><a href="#">Strona główna</a></li>
+                <li><a href="<?php echo home_url(); ?>">Strona główna</a></li>
                 <li><a href="#">Aktualności i wydarzenia</a></li>
                 <li><a href="#">Publikacje prasowe</a></li>
                 <li><a href="#">Historia Stowarzyszenia i Naszego Koła</a></li>
                 <li><a href="#">Statut/Zapisy</a></li>
-                <li><a href="#">Udział w misjach</a></li>
+                <li><a href="<?php echo home_url() . '/udzial-w-misjach'; ?>">Udział w misjach</a></li>
                 <li><a href="#">Dzień Weterana w Bydgoszczy</a></li>
                 <li><a href="#">Wycieczka do Wiednia z okazji 333. rocznicy Wiktorii Wiedeńskiej</a></li>
                 <li><a href="#">Wycieczka do Wilna i Kowna</a></li>
@@ -71,6 +71,15 @@
 
             <h4>Strona internetowa kol. Andrzej Jarzębowski z pomocą
             <a href="https://skylo.pl" target="_blank" rel="noreferrer">skylo.pl</a></h4>
+
+            <?php
+
+            if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+                <div id="widget-area" class="chw-widget-area widget-area" role="complementary">
+                    <?php dynamic_sidebar( 'sidebar-1' ); ?>
+                </div>
+
+            <?php endif; ?>
 
         </aside>
 

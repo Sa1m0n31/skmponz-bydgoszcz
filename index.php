@@ -96,6 +96,11 @@ get_header(); ?>
                 45 1020 1462 0000 7802 0221 3270<br/>
                 Wojciech Kozłowski</h3>
         </div>
+
+        <div class="dotacjaImg">
+            <img src="<?php echo get_bloginfo('stylesheet_directory') . '/img/Dotacja.png'; ?>" alt="dotacja" />
+            <img src="<?php echo get_bloginfo('stylesheet_directory') . '/img/KRSa.png'; ?>" alt="dotacja" />
+        </div>
     </div>
 </main>
 

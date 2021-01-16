@@ -184,6 +184,23 @@ menu ul li a:hover {
 	color: var(--link);
 }
 
+#widget-area {
+	margin-top: 30px;
+}
+
+#widget-area label {
+	display: none !important;
+}
+
+#widget-area select option, #widget-area select {
+	color: #000 !important;
+	height: 32px;
+}
+
+#widget-area select {
+	margin-top: 15px;
+}
+
 /* Strona glowna */
 main {
 	width: 58%;
@@ -255,7 +272,56 @@ main {
 	font-size: 20px;
 }
 
+.dotacjaImg {
+	margin: 30px 0;
+	display: flex;
+	justify-content: space-between;
+}
 
+.dotacjaImg img {
+	width: 45%;
+	height: auto;
+}
+
+/* Udzial w misjach */
+
+table {
+	margin: 30px 0;
+	width: 100%;
+	border: 1px solid #fff;
+	border-collapse: collapse;
+}
+
+td, th {
+	padding: 15px;
+	border: 1px solid #fff;
+}
+
+tr td {
+	width: 20%;
+	border: 1px solid #fff;
+	text-align: center;
+}
+
+tr td:first-child {
+	width: 10%;
+}
+
+tr td:nth-child(2) {
+	width: 30%;
+}
+
+.flag {
+	width: 80%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.country {
+	margin-bottom: 10px;
+	font-weight: 400;
+	font-size: 16px;
+}
 
 /* Footer */
 
