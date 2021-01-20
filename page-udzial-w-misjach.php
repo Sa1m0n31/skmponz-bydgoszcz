@@ -476,6 +476,11 @@ get_header(); ?>
                 </tr>
             </tbody>
         </table>
+
+
+        <?php
+            the_content();
+        ?>
     </div>
 
 <?php get_footer(); ?>

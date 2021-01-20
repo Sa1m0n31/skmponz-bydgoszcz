@@ -35,7 +35,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 }
 
 .content {
-	width: 80vw;
+	width: 90vw;
 	max-width: 1800px;
 	margin: 0 auto;
 	padding: 50px 0;
@@ -48,7 +48,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 header {
 	width: 100%;
-	height: 100px;
+	height: 180px;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 20px;
@@ -59,15 +59,17 @@ header {
 	width: 20%;
 	border-top-left-radius: 15px;
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 	align-items: center;
 	padding: 20px;
 	order: 1;
 }
 
 .headerLeft img {
-	width: 50px;
-	height: 50px;
+	width: 55px;
+	height: 55px;
+	margin: 10px 15px;
 }
 
 .headerMain {
@@ -385,6 +387,14 @@ tr td:nth-child(2) {
 	text-align: justify;
 }
 
+span[style="color: #000000;"] strong {
+	color: #000000 !important;
+}
+
+.sl-caption {
+	text-align: center !important;
+}
+
 /* Footer */
 
 footer {
@@ -396,4 +406,84 @@ footer h5 {
 	font-size: 17px;
 	font-weight: 400;
 	padding: 30px 0;
+}
+
+/* Wspomienia z misji */
+
+.wspomieniaZMisjiList {
+	list-style-type: none;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	grid-gap: 10%;
+	margin: 40px 0 50px;
+}
+
+.wspomieniaItem {
+	position: relative;
+	width: 40%;
+	margin: 20px 0;
+	border: 1px solid #000000;
+	overflow: hidden;
+}
+
+.wspomieniaItem img {
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	opacity: .4;
+	transition: .4s all;
+}
+
+.wspomieniaItem:hover img {
+	transform: scale(1.2);
+}
+
+.wspomieniaTitle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+	font-size: 17px;
+	text-align: center;
+	width: 90%;
+}
+
+p img {
+	max-width: 100% !important;
+	height: auto !important;
+}
+
+/* MOBILE */
+
+@media(max-width: 1700px) {
+	.headerLeft img {
+		width: 40px;
+		height: 40px;
+		margin: 5px;
+	}
+}
+
+@media(max-width: 1500px) {
+	.headerMain h1, .headerMain h2 {
+		font-size: 24px;
+	}
+
+	.headerYellow, .aktualnosciTitle a, .headerWhite {
+		font-size: 22px !important;
+	}
+
+	.sidebar h3, .sidebar h2, .zarzadItemName {
+		font-size: 17px;
+	}
+
+	.sidebar h4, menu ul li, p, .deklaracja h3, .deklaracja .numerKonta {
+		font-size: 15px !important;
+	}
+
+	footer h5 {
+		font-size: 14px;
+	}
 }

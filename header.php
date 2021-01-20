@@ -11,10 +11,11 @@
     <div class="content">
         <header>
             <div class="headerLeft">
-                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/order1.png' ?>" alt="medal" />
-                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/order2.png' ?>" alt="medal" />
+                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/luczniczka.jpg' ?>" alt="medal" />
                 <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/order3.png' ?>" alt="medal" />
                 <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/order4.png' ?>" alt="medal" />
+                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/medal-bydgoszcz.jpg' ?>" alt="medal-stulecia-bydgoszczy" />
+                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/medal-marszalka.jpg' ?>" alt="medal-marszalka" />
             </div>
 
             <div class="headerMain">
