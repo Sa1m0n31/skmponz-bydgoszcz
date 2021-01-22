@@ -260,3 +260,12 @@ function skmponz_add_komunikaty_organizacyjne_post_type() {
 }
 
 add_action("init", "skmponz_add_komunikaty_organizacyjne_post_type");
+
+/* Archives for custom post types */
+function my_custom_post_type_archive_where($where,$args){
+    $post_type  = isset($args['Posiedzenia zarzadu'])  ? $args['Posiedzenia zarzadu']  : 'post';
+    $where = "WHERE post_type = '$post_type' AND post_status = 'publish'";
+    return $where;
+}
+
+add_filter( 'getarchives_where','my_custom_post_type_archive_where',10,2);

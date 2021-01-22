@@ -15,6 +15,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -42,6 +43,10 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+}
+
+p {
+	font-family: 'Roboto', sans-serif !important;
 }
 
 /* Top header */
@@ -456,6 +461,53 @@ p img {
 	height: auto !important;
 }
 
+/* Komunikaty organizacyjne */
+
+.komunikatyItem {
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-bottom: 40px;
+}
+
+.komunikatyDate {
+	margin: 20px 0;
+	text-align: right;
+}
+
+.komunikatyTitle {
+	color: #EDFC02;
+	font-size: 32px;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.komunikatyItem .Standard:first-of-type {
+	margin-top: 50px !important;
+}
+
+.komunikatyContent p {
+	font-size: 17px;
+	margin: 15px 0;
+}
+
+.komunikatyItem::after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: -20px;
+	z-index: 5;
+	width: 80%;
+	height: 1px;
+	background: #fff;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.komunikatyYellow {
+	margin-bottom: 50px !important;
+}
+
 /* MOBILE */
 
 @media(max-width: 1700px) {
@@ -485,5 +537,34 @@ p img {
 
 	footer h5 {
 		font-size: 14px;
+	}
+}
+
+@media(max-width: 1000px) {
+	header {
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: auto;
+	}
+
+	.headerLeft {
+		order: 2;
+		width: 100%;
+		padding-top: 20px;
+		border-top-left-radius: 0;
+	}
+
+	.headerMain {
+		padding: 20px;
+		order: 1;
+		width: 100%;
+		border-top-left-radius: 15px;
+	}
+}
+
+@media(max-width: 700px) {
+	.headerMain h1, .headerMain h2 {
+		font-size: 18px;
 	}
 }
