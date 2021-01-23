@@ -88,6 +88,7 @@ header {
 	align-items: center;
 	justify-content: center;
 	order: 2;
+	position: relative;
 }
 
 .headerMain h1 {
@@ -96,6 +97,11 @@ header {
 
 .headerMain h2 {
 	font-weight: 400;
+}
+
+.headerMain h1 a, .headerMain h2 a {
+	text-decoration: none;
+	color: inherit;
 }
 
 /* Left menu */
@@ -345,6 +351,10 @@ main {
 	margin: 0 !important;
 }
 
+.hamburgerMenu {
+	display: none;
+}
+
 /* Udzial w misjach */
 
 table {
@@ -508,6 +518,10 @@ p img {
 	margin-bottom: 50px !important;
 }
 
+.menuMobile {
+	display: none;
+}
+
 /* MOBILE */
 
 @media(max-width: 1700px) {
@@ -563,8 +577,149 @@ p img {
 	}
 }
 
+@media(max-width: 900px) {
+	.content {
+		padding-top: 8px;
+		width: 100%;
+	}
+
+	header {
+		margin-bottom: 0;
+	}
+
+	.headerMain {
+		border-radius: 0 !important;
+	}
+
+	.mainMenu, aside {
+		display: none;
+	}
+
+	.content > main {
+		width: 100%;
+	}
+
+	.headerMain {
+		align-items: flex-start;
+	}
+
+	.headerMain h1, .headerMain h2 {
+		width: 70%;
+		text-align: center;
+	}
+
+	.hamburgerMenu {
+		display: flex;
+		flex-direction: column;
+		width: 40px;
+		height: 30px;
+		background: transparent;
+		justify-content: space-between;
+		position: absolute;
+		top: 50%;
+		right: 7%;
+		border: none;
+		outline: none;
+		transform: translateY(-50%);
+	}
+
+	.hamburgerMenuLine {
+		width: 100%;
+		height: 2px;
+		background: #fff;
+		display: block;
+	}
+
+	.headerLeft {
+		margin: 20px 0;
+	}
+
+	/* Menu mobile */
+	.menuMobile {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 0;
+		background: #0B71BB;
+		z-index: 10;
+		overflow: hidden;
+	}
+
+	.exit {
+		position: absolute;
+		top: 40px;
+		right: 40px;
+		font-size: 40px;
+		background: transparent;
+		color: #fff;
+		border: none;
+		outline: none;
+		width: 40px;
+		height: 40px;
+	}
+
+	.exitImg {
+		width: 100%;
+		height: 100%;
+	}
+
+	.menuMobile menu {
+		width: 100%;
+		margin-top: 15%;
+	}
+
+	.menuMobile menu ul li {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	header {
+		position: sticky;
+		top: 0;
+		left: 0;
+		z-index: 9;
+	}
+
+	.headerLeft {
+		transition: .4s all;
+	}
+
+	.headerMain {
+		position: sticky;
+		top: 0;
+		left: 0;
+		z-index: 9;
+	}
+}
+
 @media(max-width: 700px) {
 	.headerMain h1, .headerMain h2 {
 		font-size: 18px;
 	}
+
+	footer {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media(max-width: 600px) {
+	.exit {
+		top: 20px;
+		right: 20px;
+		width: 30px;
+		height: 30px;
+	}
+
+	.menuMobile menu {
+		margin-top: 22%;
+	}
+}
+
+.overflow {
+	overflow: hidden;
+	height: 100vh;
 }

@@ -15,7 +15,25 @@ get_header();
         </h2>
 
         <div class="praceZarzaduArchive">
+            <?php
 
+                $args = array(
+                        //'category_name' => 'Posiedzenia zarzadu',
+                        'type' => 'yearly'
+                );
+
+                wp_get_archives($args);
+
+                /*$pos = new WP_Query($args);
+
+                if($pos->have_posts()) {
+                    while($pos->have_posts()) {
+                        $pos->the_post();
+                        echo 'posiedzenie';
+                    }
+                    wp_reset_postdata();
+                } */
+            ?>
         </div>
 
     </div>

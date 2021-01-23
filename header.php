@@ -9,6 +9,20 @@
 <body>
 <div class="container">
     <div class="content">
+        <div class="menuMobile">
+            <button class="exit" onclick="menuClose()">
+                <img class="exitImg" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/exit.svg'; ?>" alt="exit" />
+            </button>
+
+            <menu>
+                <ul>
+                    <?php
+                    wp_nav_menu(array('theme_location' => 'menu-1'));
+                    ?>
+                </ul>
+            </menu>
+        </div>
+
         <header>
             <div class="headerLeft">
                 <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/luczniczka.jpg' ?>" alt="medal" />
@@ -20,15 +34,25 @@
 
             <div class="headerMain">
                 <h1>
-                    Stowarzyszenie Kombatantów Misji Pokojowych ONZ
+                    <a href="<?php echo home_url(); ?>">
+                        Stowarzyszenie Kombatantów Misji Pokojowych ONZ
+                    </a>
                 </h1>
                 <h2>
-                    Koło nr 1 w Bydgoszczy
+                    <a href="<?php echo home_url(); ?>">
+                        Koło nr 1 w Bydgoszczy
+                    </a>
                 </h2>
+
+                <button class="hamburgerMenu" onclick="menuOpen()">
+                    <span class="hamburgerMenuLine"></span>
+                    <span class="hamburgerMenuLine"></span>
+                    <span class="hamburgerMenuLine"></span>
+                </button>
             </div>
         </header>
 
-        <menu>
+        <menu class="mainMenu">
             <ul>
                 <?php
                     wp_nav_menu(array('theme_location' => 'menu-1'));
