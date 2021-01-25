@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="577feca4-a579-48e9-a2ba-e975f3fd1270" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/category-posiedzenia-zarzadu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/exit.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page-prace-zarzadu-kola.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-prace-zarzadu-kola.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-udzial-w-misjach.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-udzial-w-misjach.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -73,7 +70,9 @@
       <workItem from="1611273070489" duration="66000" />
       <workItem from="1611274594096" duration="2902000" />
       <workItem from="1611317833016" duration="10000" />
-      <workItem from="1611397290734" duration="5098000" />
+      <workItem from="1611397290734" duration="5835000" />
+      <workItem from="1611416196131" duration="18000" />
+      <workItem from="1611527290762" duration="6421000" />
     </task>
     <servers />
   </component>

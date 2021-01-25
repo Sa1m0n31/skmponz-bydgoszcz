@@ -32,3 +32,14 @@ window.addEventListener("scroll", () => {
         }
     }
 });
+
+/* Smooth scroll w posiedzeniach zarzadu */
+
+const goTo = (n) => {
+    const el = document.querySelector(`#pos${n}`);
+
+    el.scrollIntoView({
+        top: -50,
+        behavior: "smooth"
+    });
+}

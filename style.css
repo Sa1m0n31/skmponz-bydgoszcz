@@ -311,6 +311,10 @@ main {
 	margin: 10px 0;
 }
 
+.aktualnosciTitle {
+	text-align: left !important;
+}
+
 .aktualnosciTitle a {
 	font-size: 24px !important;
 	color: #EDFC02;
@@ -522,6 +526,65 @@ p img {
 	display: none;
 }
 
+/* Prace zarzadu */
+
+.praceZarzaduTopPanel {
+	display: flex;
+}
+
+.praceZarzaduTopPanel h3 {
+	margin-right: 20px;
+	font-size: 24px;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+}
+
+.praceZarzaduTopPanel ul {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.praceZarzaduTopPanel ul li {
+	margin: 20px;
+	transition: .2s all;
+}
+
+.praceZarzaduTopPanel ul li:hover {
+	color: #EDFC02;
+}
+
+.posiedzeniaBigHeader {
+	margin: 30px 0 60px;
+	font-size: 44px;
+	font-weight: 700;
+	color: #EDFC02;
+	text-align: center;
+	position: relative;
+}
+
+.posiedzeniaBigHeader::after {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 20%;
+	height: 1px;
+	background: #fff;
+}
+
+.praceZarzaduTopPanel li {
+	cursor: pointer;
+}
+
+.pos {
+	position: absolute;
+	display: block;
+	top: -15px;
+}
+
 /* MOBILE */
 
 @media(max-width: 1700px) {
@@ -554,6 +617,17 @@ p img {
 	}
 }
 
+@media(max-width: 1100px) {
+	.wspomieniaZMisjiList {
+		flex-direction: column;
+	}
+
+	.wspomieniaItem {
+		width: 100%;
+		margin: 20px 0;
+	}
+}
+
 @media(max-width: 1000px) {
 	header {
 		justify-content: center;
@@ -578,8 +652,12 @@ p img {
 }
 
 @media(max-width: 900px) {
+	main {
+		overflow: hidden;
+	}
+
 	.content {
-		padding-top: 8px;
+		padding-top: 0;
 		width: 100%;
 	}
 
@@ -630,10 +708,6 @@ p img {
 		display: block;
 	}
 
-	.headerLeft {
-		margin: 20px 0;
-	}
-
 	/* Menu mobile */
 	.menuMobile {
 		display: block;
@@ -645,6 +719,17 @@ p img {
 		background: #0B71BB;
 		z-index: 10;
 		overflow: hidden;
+	}
+
+	.menuMobile menu ul li {
+		padding-top: 9px;
+		padding-bottom: 9px;
+	}
+
+	.menu li a {
+		width: 100%;
+		height: 100%;
+		display: block;
 	}
 
 	.exit {
@@ -685,6 +770,18 @@ p img {
 
 	.headerLeft {
 		transition: .4s all;
+		position: relative;
+	}
+
+	.headerLeft::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 60%;
+		height: 1px;
+		background: #fff;
 	}
 
 	.headerMain {
@@ -692,6 +789,46 @@ p img {
 		top: 0;
 		left: 0;
 		z-index: 9;
+	}
+
+	.tablica {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	.mainSite {
+		margin-top: 0 !important;
+		padding: 10px 20px;
+	}
+
+	.headerYellow {
+		text-align: center;
+		font-size: 30px !important;
+	}
+
+	/* tmp? */
+	.headerLeft {
+		display: none !important;
+	}
+
+	/* Misje */
+	.misjeTable tbody tr td:nth-child(2) {
+		font-size: 12px;
+	}
+
+	/* Prace zarzadu */
+	.praceZarzaduTopPanel h3 {
+		font-size: 20px;
+	}
+
+	.posiedzeniaBigHeader {
+		font-size: 26px;
+	}
+
+	.komunikatyItem {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
@@ -703,6 +840,14 @@ p img {
 	footer {
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+
+	.misjeTable tr td:nth-child(2), .misjeTable tr th:nth-child(2) {
+		display: none !important;
+	}
+
+	table * {
+		font-size: 10px !important;
 	}
 }
 
@@ -722,4 +867,17 @@ p img {
 .overflow {
 	overflow: hidden;
 	height: 100vh;
+}
+
+/* Responsive tables */
+.wpb_content_element table, .vacancy_table, table {
+	border-collapse: separate;
+	border-spacing: 0;
+	width: 100%;
+	table-layout: fixed
+}
+
+.pageContent img {
+	max-width: 100%;
+	height: auto;
 }
