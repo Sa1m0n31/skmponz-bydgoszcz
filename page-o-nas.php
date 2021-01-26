@@ -87,7 +87,7 @@ get_header();
                 Deklaracja członkowska
             </h2>
 
-            <h3>Wzor deklaracji dostepny jest <a>TUTAJ</a></h3>
+            <h3>Wzor deklaracji dostepny jest <a href="<?php echo get_page_link(get_page_by_title('Statut / Zapisy')->ID); ?>">TUTAJ</a></h3>
 
             <p>
                 Składki miesięczne / roczne członkowskie oraz doraźne wpłaty  - można je wnosić na bieżąco ,  w formie przelewu elektronicznego na konto prowadzone przez naszego skarbnika kol. Wojciecha Kozłowskiego.

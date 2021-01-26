@@ -14,14 +14,16 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Source+Serif+Pro:wght@300;400;700&display=swap');
+
 
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Tinos', serif;
+	font-family: 'Source Serif Pro', serif;
 	color: #fff;
 }
 
@@ -47,6 +49,18 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 p {
 	font-family: 'Roboto', sans-serif !important;
+}
+
+/* Remove blue shadow on mobile tap */
+
+
+* {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-tap-highlight-color: transparent;
 }
 
 /* Top header */
@@ -102,6 +116,31 @@ header {
 .headerMain h1 a, .headerMain h2 a {
 	text-decoration: none;
 	color: inherit;
+	font-family: 'Charm', cursive !important;
+}
+
+.menuMobile ul {
+	margin-top: 30px;
+}
+
+.mobileMenuHeader {
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 32px;
+	font-family: 'CHarm', cursive;
+}
+
+.mobileMenuHeader::after {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 2px;
+	width: 60px;
+	background: #EDFC02;
 }
 
 /* Left menu */
@@ -128,6 +167,10 @@ menu ul li {
 	display: flex;
 	justify-content: center;
 	border-bottom: 1px solid #6AAAD8;
+}
+
+menu ul li a {
+	font-family: 'Source Serif Pro', serif;
 }
 
 menu ul li:last-child {
@@ -427,6 +470,15 @@ footer h5 {
 	padding: 30px 0;
 }
 
+/* Page counter */
+.avc_visit_counter_front {
+	margin-top: 30px !important;
+	border-color: #EDFC02 !important;
+	max-width: none !important;
+	padding: 20px !important;
+	font-size: 26px !important;
+}
+
 /* Wspomienia z misji */
 
 .wspomieniaZMisjiList {
@@ -549,6 +601,20 @@ p img {
 .praceZarzaduTopPanel ul li {
 	margin: 20px;
 	transition: .2s all;
+}
+
+.praceZarzaduTopPanel ul li button {
+	border: 1px solid #EDFC02;
+	background: transparent;
+	color: #fff;
+	padding: 8px 20px;
+	cursor: pointer;
+	outline: none;
+	transition: .4s all;
+}
+
+.praceZarzaduTopPanel ul li button:hover {
+	background: #1982CC;
 }
 
 .praceZarzaduTopPanel ul li:hover {
@@ -711,7 +777,7 @@ p img {
 	/* Menu mobile */
 	.menuMobile {
 		display: block;
-		position: absolute;
+		position: sticky;
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -741,8 +807,8 @@ p img {
 		color: #fff;
 		border: none;
 		outline: none;
-		width: 40px;
-		height: 40px;
+		width: 30px;
+		height: 30px;
 	}
 
 	.exitImg {
@@ -849,14 +915,22 @@ p img {
 	table * {
 		font-size: 10px !important;
 	}
+
+	.praceZarzaduTopPanel {
+		flex-direction: column;
+	}
+
+	.praceZarzaduTopPanel ul li {
+		margin: 10px 10px 10px 0;
+	}
 }
 
 @media(max-width: 600px) {
 	.exit {
-		top: 20px;
+		top: 5px;
 		right: 20px;
-		width: 30px;
-		height: 30px;
+		width: 20px;
+		height: 20px;
 	}
 
 	.menuMobile menu {

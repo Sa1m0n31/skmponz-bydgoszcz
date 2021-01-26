@@ -9,21 +9,25 @@
 <body>
 <div class="container">
     <div class="content">
-        <div class="menuMobile">
-            <button class="exit" onclick="menuClose()">
-                <img class="exitImg" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/exit.svg'; ?>" alt="exit" />
-            </button>
-
-            <menu>
-                <ul>
-                    <?php
-                    wp_nav_menu(array('theme_location' => 'menu-1'));
-                    ?>
-                </ul>
-            </menu>
-        </div>
-
         <header>
+            <div class="menuMobile">
+                <button class="exit" onclick="menuClose()">
+                    <img class="exitImg" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/exit.svg'; ?>" alt="exit" />
+                </button>
+
+                <h1 class="mobileMenuHeader">
+                    Menu
+                </h1>
+
+                <menu>
+                    <ul>
+                        <?php
+                        wp_nav_menu(array('theme_location' => 'menu-1'));
+                        ?>
+                    </ul>
+                </menu>
+            </div>
+
             <div class="headerLeft">
                 <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/luczniczka.jpg' ?>" alt="medal" />
                 <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/order3.png' ?>" alt="medal" />
@@ -96,6 +100,10 @@
                 </div>
 
             <?php endif; ?>
+
+            <?php
+            echo do_shortcode('[apvc_embed type="customized" border_size="2" border_radius="5" background_color="" font_size="14" font_style="" font_color="" counter_label="Licznik odwiedzin:" today_cnt_label="Licznik odwiedzin:" global_cnt_label="Licznik odwiedzin:" border_color="" border_style="solid" padding="5" width="200" global="true" today="false" current="false" icon_position="" widget_template="None" ]');
+            ?>
 
         </aside>
 

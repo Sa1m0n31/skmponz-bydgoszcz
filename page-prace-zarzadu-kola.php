@@ -20,11 +20,25 @@ get_header();
                 <ul>
                     <?php
                         for($i=date("Y"); $i>=2014; $i--) {
-                            ?>
-                        <li onclick="<?php echo 'goTo(' . $i .  ')'; ?>">
-                                <?php echo $i; ?>
+                    $args = array(
+                        'post_type' => 'Posiedzenia zarzadu',
+                        'date_query' => array(
+                            'year' => $i
+                        )
+                    );
+                    $year = new WP_Query($args);
+
+                    if($year->have_posts()) {
+                        $year->the_post();
+                        ?>
+                            <li>
+                                <button onclick="<?php echo 'goTo(' . $i .  ')'; ?>">
+                                    <?php echo $i; ?>
+                                </button>
+                                </li>
                         </li>
                     <?php
+                        }
                         }
                     ?>
                 </ul>
