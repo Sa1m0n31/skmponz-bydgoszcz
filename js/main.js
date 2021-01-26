@@ -43,3 +43,17 @@ const goTo = (n) => {
         behavior: "smooth"
     });
 }
+
+/* Add visits from old site to views counter */
+
+const addToViewCounter = () => {
+    const el = document.querySelector(".avc_visit_counter_front");
+    const textAll = document.querySelector(".avc_visit_counter_front").textContent;
+    /* Get number after ':' */
+    let number = parseInt(textAll.split(":")[1]) + 2431142;
+    el.textContent = "Licznik odwiedzin: " + number;
+}
+
+if(document.querySelector(".avc_visit_counter_front") !== null) {
+    addToViewCounter();
+}

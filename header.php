@@ -25,6 +25,14 @@
                         wp_nav_menu(array('theme_location' => 'menu-1'));
                         ?>
                     </ul>
+
+                    <?php
+                    if ( is_active_sidebar( 'sidebar-mobile' ) ) : ?>
+                        <div id="widget-area" class="chw-widget-area widget-area mobileOnly" role="complementary">
+                            <?php dynamic_sidebar( 'sidebar-mobile' ); ?>
+                        </div>
+
+                    <?php endif; ?>
                 </menu>
             </div>
 

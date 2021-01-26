@@ -10,8 +10,8 @@ get_header(); ?>
         <h2 class="headerYellow">Aktualności</h2>
         <?php
             $args = array(
-                    'posts_per_page' => 10,
-                    'post_type' => 'post'
+                    'post_type' => 'post',
+                    'paged' => get_query_var( 'paged' )
             );
 
             $main = new WP_Query( $args );
@@ -44,6 +44,8 @@ get_header(); ?>
                     </div>
         <?php
                 }
+                posts_nav_link();
+                wp_reset_query();
             }
 
         ?>

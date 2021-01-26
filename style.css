@@ -479,6 +479,10 @@ footer h5 {
 	font-size: 26px !important;
 }
 
+.menuMobile .widget-title, .menuMobile #archives-2 {
+	text-align: center;
+}
+
 /* Wspomienia z misji */
 
 .wspomieniaZMisjiList {
@@ -717,9 +721,17 @@ p img {
 	}
 }
 
+.mobileOnly {
+	display: none;
+}
+
 @media(max-width: 900px) {
 	main {
 		overflow: hidden;
+	}
+
+	.mobileOnly {
+		display: block;
 	}
 
 	.content {
@@ -735,8 +747,21 @@ p img {
 		border-radius: 0 !important;
 	}
 
-	.mainMenu, aside {
+	.mainMenu {
 		display: none;
+	}
+
+	.sidebar {
+		position: absolute;
+		bottom: 90px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100% !important;
+		border-bottom-left-radius: 0 !important;
+	}
+
+	.content {
+		padding-bottom: 680px;
 	}
 
 	.content > main {
@@ -788,8 +813,8 @@ p img {
 	}
 
 	.menuMobile menu ul li {
-		padding-top: 9px;
-		padding-bottom: 9px;
+		padding-top: 4px;
+		padding-bottom: 4px;
 	}
 
 	.menu li a {
@@ -940,7 +965,7 @@ p img {
 
 .overflow {
 	overflow: hidden;
-	height: 100vh;
+	height: calc(100vh);
 }
 
 /* Responsive tables */
