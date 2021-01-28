@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="577feca4-a579-48e9-a2ba-e975f3fd1270" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/skmponz-logo.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page-historia-stowarzyszenia.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/single-posiedzenia-zarzadu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-o-nas.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-o-nas.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,13 +48,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lean" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\skmponz" />
       <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\skmponz\img" />
     </key>
   </component>
@@ -79,6 +82,7 @@
       <workItem from="1611527290762" duration="6421000" />
       <workItem from="1611618530943" duration="4480000" />
       <workItem from="1611677201284" duration="4942000" />
+      <workItem from="1611829280550" duration="4692000" />
     </task>
     <servers />
   </component>

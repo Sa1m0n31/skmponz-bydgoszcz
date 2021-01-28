@@ -37,24 +37,28 @@
             </div>
 
             <div class="headerLeft">
-                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/luczniczka.jpg' ?>" alt="medal" />
-                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/order3.png' ?>" alt="medal" />
-                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/order4.png' ?>" alt="medal" />
                 <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/medal-bydgoszcz.jpg' ?>" alt="medal-stulecia-bydgoszczy" />
+                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/order4.png' ?>" alt="medal" />
                 <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/medal-marszalka.jpg' ?>" alt="medal-marszalka" />
             </div>
 
             <div class="headerMain">
-                <h1>
-                    <a href="<?php echo home_url(); ?>">
-                        Stowarzyszenie Kombatantów Misji Pokojowych ONZ
-                    </a>
-                </h1>
-                <h2>
-                    <a href="<?php echo home_url(); ?>">
-                        Koło nr 1 w Bydgoszczy
-                    </a>
-                </h2>
+                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/luczniczka.jpg' ?>" alt="medal" />
+
+                <div class="headerMainTitle">
+                    <h1>
+                        <a href="<?php echo home_url(); ?>">
+                            Stowarzyszenie Kombatantów Misji Pokojowych ONZ
+                        </a>
+                    </h1>
+                    <h2>
+                        <a href="<?php echo home_url(); ?>">
+                            Koło nr 1 w Bydgoszczy
+                        </a>
+                    </h2>
+                </div>
+
+                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/skmponz-logo.jfif' ?>" alt="medal" />
 
                 <button class="hamburgerMenu" onclick="menuOpen()">
                     <span class="hamburgerMenuLine"></span>

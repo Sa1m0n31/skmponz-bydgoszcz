@@ -236,7 +236,7 @@ function skmponz_add_posiedzenia_zarzadu_post_type() {
         'supports'             => $supports,
         'public'               => true,
         'capability_type'      => 'post',
-        'rewrite'              => array( 'slug' => 'events' ),
+        'rewrite'              => array( 'slug' => 'posiedzenia' ),
         'has_archive'          => true,
         'menu_position'        => 30,
         'menu_icon'            => 'dashicons-businessman'
@@ -246,6 +246,32 @@ function skmponz_add_posiedzenia_zarzadu_post_type() {
 }
 
 add_action("init", "skmponz_add_posiedzenia_zarzadu_post_type");
+
+// Add Zarzad post type
+function skmponz_add_zarzad_post_type() {
+    $supports = array(
+        'title'
+    );
+
+    $labels = array(
+        'name' => 'Zarzad'
+    );
+
+    $args = array(
+        'labels'               => $labels,
+        'supports'             => $supports,
+        'public'               => true,
+        'capability_type'      => 'post',
+        'rewrite'              => array( 'slug' => 'zarzad' ),
+        'has_archive'          => true,
+        'menu_position'        => 30,
+        'menu_icon'            => 'dashicons-businessman'
+    );
+
+    register_post_type("Zarzad", $args);
+}
+
+add_action("init", "skmponz_add_zarzad_post_type");
 
 // Add Komunikaty organizacyjne post type
 function skmponz_add_komunikaty_organizacyjne_post_type() {

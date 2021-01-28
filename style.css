@@ -81,14 +81,14 @@ header {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
-	padding: 20px;
+	padding: 10px;
 	order: 1;
 }
 
 .headerLeft img {
-	width: 55px;
-	height: 55px;
-	margin: 10px 15px;
+	width: 75px;
+	height: 75px;
+	margin: 10px 5px;
 }
 
 .headerMain {
@@ -98,11 +98,22 @@ header {
 	font-size: 20px;
 	background: var(--main);
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
 	align-items: center;
-	justify-content: center;
 	order: 2;
 	position: relative;
+	padding: 20px 50px;
+}
+
+.headerMain .headerOrder {
+	height: 80%;
+	width: auto;
+}
+
+.headerMainTitle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .headerMain h1 {
@@ -473,7 +484,7 @@ footer h5 {
 /* Page counter */
 .avc_visit_counter_front {
 	margin-top: 30px !important;
-	border-color: #EDFC02 !important;
+	border: none !important;
 	max-width: none !important;
 	padding: 20px !important;
 	font-size: 26px !important;
@@ -725,7 +736,18 @@ p img {
 	display: none;
 }
 
+@media(max-width: 1000px) {
+	.headerMain .headerOrder {
+		width: 65px;
+		height: 65px;
+	}
+}
+
 @media(max-width: 900px) {
+	.headerMain .headerOrder {
+		display: none !important;
+	}
+
 	main {
 		overflow: hidden;
 	}
@@ -961,6 +983,10 @@ p img {
 	.menuMobile menu {
 		margin-top: 22%;
 	}
+
+	.headerMainTitle {
+		align-items: flex-start;
+	}
 }
 
 .overflow {
@@ -979,4 +1005,28 @@ p img {
 .pageContent img {
 	max-width: 100%;
 	height: auto;
+}
+
+/* Fix tables */
+
+.historiaStowarzyszenia table, .historiaStowarzyszenia tr {
+	width: 100%;
+	table-layout: auto;
+}
+
+.historiaStowarzyszenia table > tbody > tr > td:nth-child(1) {
+	width: 10% !important;
+}
+
+.historiaStowarzyszenia table > tbody > tr > td:nth-child(2) {
+	width: 25% !important;
+}
+
+.historiaStowarzyszenia table > tbody > tr > td:nth-child(3) {
+	width: 65% !important;
+}
+
+.historiaStowarzyszenia table > tbody > tr > td:nth-child(3) p, .historiaStowarzyszenia table > tbody > tr > td:nth-child(3) {
+	text-align: justify !important;
+	margin: 0 !important;
 }

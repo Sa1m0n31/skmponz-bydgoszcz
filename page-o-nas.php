@@ -13,7 +13,7 @@ get_header();
         <h3 class="headerWhite">1. Zarząd Koła</h3>
 
         <div class="zarzadInner">
-            <div class="zarzadItem">
+            <!--<div class="zarzadItem">
                 <img class="zarzadItemImg" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/Keller.png'; ?>" alt="ryszard-keller" />
 
                 <h4 class="zarzadItemName">
@@ -51,38 +51,68 @@ get_header();
                 <h4 class="zarzadItemName">
                     <span class="bold">Wojciech Kozłowski</span> (UNIFIL - Liban, UNDOF- Syria) - <span class="bold">Skarbnik</span>
                 </h4>
-            </div>
+            </div>-->
+
+            <?php
+                $args = array(
+                        'post_type' => 'zarzad'
+                );
+
+                $zarzad = new WP_Query($args);
+
+                if($zarzad->have_posts()) {
+                    while($zarzad->have_posts()) {
+                        $zarzad->the_post();
+                        if(get_field('zarzad__komisja_rewizyjna') == 'Zarzad') {
+                            ?>
+                            <div class="zarzadItem">
+                                <img class="zarzadItemImg" src="<?php echo get_field('zdjecie'); ?>" alt="<?php echo get_field('czlonek'); ?>" />
+
+                                <h4 class="zarzadItemName">
+                                    - <?php echo get_field('czlonek'); ?>
+                                </h4>
+                            </div>
+            <?php
+                        }
+                    }
+                    wp_reset_postdata();
+                }
+
+            ?>
         </div>
 
         <h3 class="headerWhite">2. Komisja rewizyjna</h3>
 
         <div class="zarzadInner">
-            <div class="zarzadItem">
-                <img class="zarzadItemImg" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/Eugeniusz-Trzcinski.png'; ?>" alt="eugeniusz-trzcinski" />
+            <?php
+            $args = array(
+                'post_type' => 'zarzad'
+            );
 
-                <h4 class="zarzadItemName">
-                    <span class="bold">Eugeniusz Trzciński</span> (UNIFIL - Liban) - <span class="bold">Przedowniczący</span>
-                </h4>
-            </div>
+            $zarzad = new WP_Query($args);
 
-            <div class="zarzadItem">
-                <img class="zarzadItemImg" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/krzysztof-Gorski.png'; ?>" alt="krzysztof-gorski" />
+            if($zarzad->have_posts()) {
+                while($zarzad->have_posts()) {
+                    $zarzad->the_post();
+                    if(get_field('zarzad__komisja_rewizyjna') == 'Komisja rewizyjna') {
+                        ?>
+                        <div class="zarzadItem">
+                            <img class="zarzadItemImg" src="<?php echo get_field('zdjecie'); ?>" alt="<?php echo get_field('czlonek'); ?>" />
 
-                <h4 class="zarzadItemName">
-                    <span class="bold">Krzysztof Górski</span> (UNDOF – Syria) - <span class="bold">Wiceprzewodniczący</span>
-                </h4>
-            </div>
+                            <h4 class="zarzadItemName">
+                                - <?php echo get_field('czlonek'); ?>
+                            </h4>
+                        </div>
+                        <?php
+                    }
+                }
+                wp_reset_postdata();
+            }
 
-            <div class="zarzadItem">
-                <img class="zarzadItemImg" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/Zbyszek-Rogalski.png'; ?>" alt="wojciech-kozlowski" />
-
-                <h4 class="zarzadItemName">
-                    <span class="bold">Zbigniew Rogalski</span> (UNEF II - Egipt) - <span class="bold">Członek</span>
-                </h4>
-            </div>
+            ?>
         </div>
 
-        <div class="deklaracja">
+        <!--<div class="deklaracja">
             <h2 class="headerYellow">
                 Deklaracja członkowska
             </h2>
@@ -101,7 +131,10 @@ get_header();
         <div class="dotacjaImg">
             <img src="<?php echo get_bloginfo('stylesheet_directory') . '/img/Dotacja.png'; ?>" alt="dotacja" />
             <img src="<?php echo get_bloginfo('stylesheet_directory') . '/img/KRSa.png'; ?>" alt="dotacja" />
-        </div>
+        </div>-->
+        <?php
+        the_content();
+        ?>
     </div>
 </main>
 
