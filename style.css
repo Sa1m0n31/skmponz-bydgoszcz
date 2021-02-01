@@ -106,7 +106,7 @@ header {
 }
 
 .headerMain .headerOrder {
-	height: 80%;
+	height: 100%;
 	width: auto;
 }
 
@@ -381,11 +381,13 @@ main {
 
 .aktualnosciBtn {
 	background: transparent;
-	border: 1px solid #fff;
 	width: 80px;
 	height: 30px;
 	margin-top: 20px;
 	position: relative;
+	margin-left: 80%;
+	border: none;
+	outline: none;
 }
 
 .aktualnosciBtn a {
@@ -1029,4 +1031,8 @@ p img {
 .historiaStowarzyszenia table > tbody > tr > td:nth-child(3) p, .historiaStowarzyszenia table > tbody > tr > td:nth-child(3) {
 	text-align: justify !important;
 	margin: 0 !important;
+}
+
+.sidebar #widget-area:first-child {
+	margin-top: 0 !important;
 }

@@ -79,7 +79,7 @@
         <!-- SRODEK - TABLICA I TRESC STRONY -->
 
         <aside class="sidebar">
-            <h2 class="marginBottom">
+            <!--<h2 class="marginBottom">
                 Kontakt:
             </h2>
 
@@ -102,7 +102,7 @@
             <h4 class="marginBottom">Skarbnik 602 380 159</h4>
 
             <h4>Strona internetowa kol. Andrzej Jarzębowski z pomocą
-            <a href="https://skylo.pl" target="_blank" rel="noreferrer">skylo.pl</a></h4>
+            <a href="https://skylo.pl" target="_blank" rel="noreferrer">skylo.pl</a></h4>-->
 
             <?php
 
