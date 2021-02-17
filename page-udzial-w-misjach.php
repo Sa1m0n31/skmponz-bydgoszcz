@@ -9,7 +9,7 @@ get_header(); ?>
     <div class="mainSite">
         <h2 class="headerYellow">Udział członków SKMP ONZ koła nr 1 w Bydgoszczy w misjach poza granicami kraju</h2>
 
-        <table class="misjeTable">
+        <!--<table class="misjeTable">
             <thead>
                 <tr>
                     <th>l.p.</th>
@@ -475,7 +475,7 @@ get_header(); ?>
                     </td>
                 </tr>
             </tbody>
-        </table>
+        </table>-->
 
 
         <?php

@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="577feca4-a579-48e9-a2ba-e975f3fd1270" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/medal1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/medal2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/skmponz-logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-udzial-w-misjach.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-udzial-w-misjach.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,8 +54,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\skmponz" />
       <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\skmponz\img" />
+      <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\skmponz" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -79,7 +83,15 @@
       <workItem from="1611677201284" duration="4942000" />
       <workItem from="1611829280550" duration="5222000" />
       <workItem from="1611849460640" duration="14000" />
-      <workItem from="1612214856766" duration="2860000" />
+      <workItem from="1612214856766" duration="3482000" />
+      <workItem from="1612252305457" duration="987000" />
+      <workItem from="1612343487377" duration="4970000" />
+      <workItem from="1612394274576" duration="677000" />
+      <workItem from="1612463796629" duration="3219000" />
+      <workItem from="1612518775079" duration="1097000" />
+      <workItem from="1612616135797" duration="18000" />
+      <workItem from="1612982845320" duration="467000" />
+      <workItem from="1613556845621" duration="735000" />
     </task>
     <servers />
   </component>

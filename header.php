@@ -37,13 +37,19 @@
             </div>
 
             <div class="headerLeft">
-                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/medal-bydgoszcz.jpg' ?>" alt="medal-stulecia-bydgoszczy" />
-                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/order4.png' ?>" alt="medal" />
-                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/medal-marszalka.jpg' ?>" alt="medal-marszalka" />
+                <?php
+                $custom_logo_id = get_theme_mod( 'custom_logo' );
+                $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                ?>
+                <img class="headerOrder" src="<?php echo $image[0]; ?>" alt="luczniczka">
+<!--                <div class="wrapperHelper">-->
+<!--                    <img class="headerOrder" src="--><?php //echo get_bloginfo('stylesheet_directory') . '/img/order4.png' ?><!--" alt="medal" />-->
+<!--                </div>-->
             </div>
 
             <div class="headerMain">
-                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/luczniczka.jpg' ?>" alt="medal" />
+
+                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/skmponz-logo.png' ?>" alt="medal" />
 
                 <div class="headerMainTitle">
                     <h1>
@@ -58,7 +64,8 @@
                     </h2>
                 </div>
 
-                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/skmponz-logo.jfif' ?>" alt="medal" />
+                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/medal1.png' ?>" alt="medal-stulecia-bydgoszczy" />
+                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/medal2.png' ?>" alt="medal-marszalka" />
 
                 <button class="hamburgerMenu" onclick="menuOpen()">
                     <span class="hamburgerMenuLine"></span>
@@ -99,10 +106,7 @@
             <h4>Prezes: 605 625 899,</h4>
             <h4 class="marginBottom">e-mail: r.keller@op.pl</h4>
 
-            <h4 class="marginBottom">Skarbnik 602 380 159</h4>
-
-            <h4>Strona internetowa kol. Andrzej Jarzębowski z pomocą
-            <a href="https://skylo.pl" target="_blank" rel="noreferrer">skylo.pl</a></h4>-->
+            <h4 class="marginBottom">Skarbnik 602 380 159</h4>-->
 
             <?php
 
