@@ -1,4 +1,4 @@
 Website for veteran's organization from Bydgoszcz
 
-Stack: HTML, CSS, PHP, WordPress<br/>
-Plugins: ACF, NextGEN Gallery
+<b>Stack</b>: HTML, CSS, PHP, WordPress<br/>
+<b>Plugins</b>: ACF, NextGEN Gallery
