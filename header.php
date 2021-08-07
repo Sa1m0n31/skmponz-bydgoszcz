@@ -42,9 +42,6 @@
                 $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
                 ?>
                 <img class="headerOrder" src="<?php echo $image[0]; ?>" alt="luczniczka">
-<!--                <div class="wrapperHelper">-->
-<!--                    <img class="headerOrder" src="--><?php //echo get_bloginfo('stylesheet_directory') . '/img/order4.png' ?><!--" alt="medal" />-->
-<!--                </div>-->
             </div>
 
             <div class="headerMain">
@@ -59,13 +56,13 @@
                     </h1>
                     <h2>
                         <a href="<?php echo home_url(); ?>">
-                            Koło nr 1 w Bydgoszczy
+                            Koło nr 22 w Grudziądzu
                         </a>
                     </h2>
                 </div>
 
-                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/medal1.png' ?>" alt="medal-stulecia-bydgoszczy" />
-                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/medal2.png' ?>" alt="medal-marszalka" />
+                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/herb-grudziadza.jpg' ?>" alt="medal-stulecia-bydgoszczy" />
+                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/pomnik-zolnieza.jpg' ?>" alt="medal-marszalka" />
 
                 <button class="hamburgerMenu" onclick="menuOpen()">
                     <span class="hamburgerMenuLine"></span>
@@ -76,6 +73,9 @@
         </header>
 
         <menu class="mainMenu">
+            <h3 class="mainMenu__header">
+                Menu
+            </h3>
             <ul>
                 <?php
                     wp_nav_menu(array('theme_location' => 'menu-1'));
@@ -84,30 +84,7 @@
         </menu>
 
         <!-- SRODEK - TABLICA I TRESC STRONY -->
-
         <aside class="sidebar">
-            <!--<h2 class="marginBottom">
-                Kontakt:
-            </h2>
-
-            <h3>
-                Adres do korespondencji:
-            </h3>
-            <h4>Stowarzyszenie Kombatantów</h4>
-            <h4>Misji Pokojowych ONZ</h4>
-            <h4>Koło Nr 1 w Bydgoszczy</h4>
-            <h4>ul. Sułkowskiego 52a</h4>
-            <h4>85-915 Bydgoszcz</h4>
-
-
-            <h3 class="marginTop">
-                Telefony, adres e-mail:
-            </h3>
-            <h4>Prezes: 605 625 899,</h4>
-            <h4 class="marginBottom">e-mail: r.keller@op.pl</h4>
-
-            <h4 class="marginBottom">Skarbnik 602 380 159</h4>-->
-
             <?php
 
             if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
@@ -118,7 +95,7 @@
             <?php endif; ?>
 
             <?php
-            echo do_shortcode('[apvc_embed type="customized" border_size="2" border_radius="5" background_color="" font_size="14" font_style="" font_color="" counter_label="Licznik odwiedzin:" today_cnt_label="Licznik odwiedzin:" global_cnt_label="Licznik odwiedzin:" border_color="" border_style="solid" padding="5" width="200" global="true" today="false" current="false" icon_position="" widget_template="None" ]');
+                echo do_shortcode('[apvc_embed type="customized" border_size="2" border_radius="5" background_color="" font_size="14" font_style="" font_color="" counter_label="Licznik odwiedzin:" today_cnt_label="Licznik odwiedzin:" global_cnt_label="Licznik odwiedzin:" border_color="" border_style="solid" padding="5" width="200" global="true" today="false" current="false" icon_position="" widget_template="None" ]');
             ?>
 
         </aside>

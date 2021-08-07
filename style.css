@@ -15,7 +15,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Source+Serif+Pro:wght@300;400;700&display=swap');
 
 
@@ -23,17 +23,17 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Source Serif Pro', serif;
+	font-family: 'Roboto', sans-serif;
 	color: #fff;
 }
 
 :root {
-	--main: #0B71BB;
+	--main: #095FB8;
 	--link: #EDFC02;
 }
 
 .container {
-	background: transparent linear-gradient(180deg, #89BCE1 0%, #2B85C6 100%) 0 0 no-repeat padding-box;
+	background: rgb(65, 143, 222);
 	position: relative;
 }
 
@@ -138,7 +138,7 @@ header {
 .headerMain h1 a, .headerMain h2 a {
 	text-decoration: none;
 	color: #EDFC02;
-	font-family: 'Charm', cursive !important;
+	font-family: 'MonteCarlo', cursive !important;
 }
 
 @media(min-width: 1500px) {
@@ -188,27 +188,57 @@ menu ul {
 	align-items: center;
 }
 
-menu ul li {
+.menu-main-menu-container {
 	width: 80%;
-	font-size: 18px;
-	padding: 20px 0;
-	display: flex;
-	justify-content: center;
-	border-bottom: 1px solid #6AAAD8;
+	margin: 30px auto;
 }
 
-menu ul li a {
-	font-family: 'Source Serif Pro', serif;
+menu ul li {
+	width: 100%;
+	font-size: 16px;
+	padding: 0 0 0 15px;
+	margin: 20px 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	transition: .4s all;
+}
+
+.mainMenu__header {
+	text-align: center;
+	font-family: 'MonteCarlo', cursive;
+	font-size: 28px;
+	color: var(--link);
+	margin-top: 25px;
+}
+
+.mainMenu ul > div {
+	width: 80%;
+}
+
+menu ul li:hover {
+	padding-left: 20px;
+}
+
+menu ul li::before {
+	content: "";
+	background: var(--link);
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	transform: translateY(-50%);
 }
 
 menu ul li:last-child {
 	border-bottom: none;
-	margin-top: 40px !important;
 }
 
 menu ul li a {
 	color: #fff;
-	text-align: center;
 	text-decoration: none;
 	transition: .4s all;
 }

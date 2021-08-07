@@ -3,7 +3,7 @@ get_header(); ?>
 
 <main>
     <div class="tablica">
-        <img class="tablicaImg" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/bigbox.png'?>" alt="tablica" />
+        <img class="tablicaImg" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/spichrze.jpg'?>" alt="tablica" />
     </div>
 
     <div class="mainSite">
