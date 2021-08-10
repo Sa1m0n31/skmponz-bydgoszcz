@@ -94,9 +94,9 @@
 
             <?php endif; ?>
 
-            <?php
-                echo do_shortcode('[apvc_embed type="customized" border_size="2" border_radius="5" background_color="" font_size="14" font_style="" font_color="" counter_label="Licznik odwiedzin:" today_cnt_label="Licznik odwiedzin:" global_cnt_label="Licznik odwiedzin:" border_color="" border_style="solid" padding="5" width="200" global="true" today="false" current="false" icon_position="" widget_template="None" ]');
-            ?>
+<!--            --><?php
+//                echo do_shortcode('[apvc_embed type="customized" border_size="2" border_radius="5" background_color="" font_size="14" font_style="" font_color="" counter_label="Licznik odwiedzin:" today_cnt_label="Licznik odwiedzin:" global_cnt_label="Licznik odwiedzin:" border_color="" border_style="solid" padding="5" width="200" global="true" today="false" current="false" icon_position="" widget_template="None" ]');
+//            ?>
 
         </aside>
 

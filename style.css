@@ -1089,3 +1089,39 @@ p img {
 .sidebar #widget-area:first-child {
 	margin-top: 0 !important;
 }
+
+/* Grudziadz update */
+.contact__address {
+	margin-top: 15px;
+	text-align: center;
+}
+
+.mt-0 {
+	margin-top: 0;
+}
+
+#wpsvctable, #wpsvcip, #wpsvcdate, #wpsvcattribution, .wps_visitor_title {
+	display: none;
+}
+
+#wpsvccount {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wps_text_glowing * {
+	color: #fff !important;
+	zoom: 1.4;
+}
+
+select[name=archive-dropdown] {
+	margin: 15px auto 5px;
+	display: block;
+}
+
+@media (-webkit-device-pixel-ratio: 1.25) {
+	* {
+		zoom: .98;
+	}
+}

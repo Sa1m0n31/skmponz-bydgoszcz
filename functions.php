@@ -193,32 +193,32 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /* Add custom post types */
 
 // Add Wspomnienia z misji post type
-function skmponz_add_wspomnienia_z_misji_post_type() {
-    $supports = array(
-        'title',
-        'editor',
-        'thumbnail'
-    );
-
-    $labels = array(
-        'name' => 'Wspomnienia z misji'
-    );
-
-    $args = array(
-        'labels'               => $labels,
-        'supports'             => $supports,
-        'public'               => true,
-        'capability_type'      => 'post',
-        'rewrite'              => array( 'slug' => 'wspomnienia' ),
-        'has_archive'          => false,
-        'menu_position'        => 30,
-        'menu_icon'            => 'dashicons-admin-site-alt'
-    );
-
-    register_post_type("Wspomnienia z misji", $args);
-}
-
-add_action("init", "skmponz_add_wspomnienia_z_misji_post_type");
+//function skmponz_add_wspomnienia_z_misji_post_type() {
+//    $supports = array(
+//        'title',
+//        'editor',
+//        'thumbnail'
+//    );
+//
+//    $labels = array(
+//        'name' => 'Wspomnienia z misji'
+//    );
+//
+//    $args = array(
+//        'labels'               => $labels,
+//        'supports'             => $supports,
+//        'public'               => true,
+//        'capability_type'      => 'post',
+//        'rewrite'              => array( 'slug' => 'wspomnienia' ),
+//        'has_archive'          => false,
+//        'menu_position'        => 30,
+//        'menu_icon'            => 'dashicons-admin-site-alt'
+//    );
+//
+//    register_post_type("Wspomnienia z misji", $args);
+//}
+//
+//add_action("init", "skmponz_add_wspomnienia_z_misji_post_type");
 
 // Add Posiedzenia zarzdu post type
 function skmponz_add_posiedzenia_zarzadu_post_type() {
@@ -274,31 +274,31 @@ function skmponz_add_zarzad_post_type() {
 add_action("init", "skmponz_add_zarzad_post_type");
 
 // Add Komunikaty organizacyjne post type
-function skmponz_add_komunikaty_organizacyjne_post_type() {
-    $supports = array(
-        'title',
-        'editor'
-    );
-
-    $labels = array(
-        'name' => 'Kom. organizacyjne'
-    );
-
-    $args = array(
-        'labels'               => $labels,
-        'supports'             => $supports,
-        'public'               => true,
-        'capability_type'      => 'post',
-        'rewrite'              => array( 'slug' => 'events' ),
-        'has_archive'          => true,
-        'menu_position'        => 32,
-        'menu_icon'            => 'dashicons-welcome-write-blog'
-    );
-
-    register_post_type("Kom organizacyjne", $args);
-}
-
-add_action("init", "skmponz_add_komunikaty_organizacyjne_post_type");
+//function skmponz_add_komunikaty_organizacyjne_post_type() {
+//    $supports = array(
+//        'title',
+//        'editor'
+//    );
+//
+//    $labels = array(
+//        'name' => 'Kom. organizacyjne'
+//    );
+//
+//    $args = array(
+//        'labels'               => $labels,
+//        'supports'             => $supports,
+//        'public'               => true,
+//        'capability_type'      => 'post',
+//        'rewrite'              => array( 'slug' => 'events' ),
+//        'has_archive'          => true,
+//        'menu_position'        => 32,
+//        'menu_icon'            => 'dashicons-welcome-write-blog'
+//    );
+//
+//    register_post_type("Kom organizacyjne", $args);
+//}
+//
+//add_action("init", "skmponz_add_komunikaty_organizacyjne_post_type");
 
 /* Archives for custom post types */
 function my_custom_post_type_archive_where($where,$args){
