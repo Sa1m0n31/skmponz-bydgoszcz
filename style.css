@@ -3,7 +3,7 @@ Theme Name: skmponz
 Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
-Description: Description
+Description: Descriptionh
 Version: 1.0.0
 Tested up to: 5.4
 Requires PHP: 5.6
@@ -15,7 +15,6 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=MonteCarlo:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Source+Serif+Pro:wght@300;400;700&display=swap');
 
 
@@ -74,7 +73,7 @@ header {
 	position: relative;
 }
 
-.headerLeft {
+.headerLeft, .headerRight {
 	min-height: 100% !important;
 	background: var(--main);
 	width: 20%;
@@ -91,14 +90,27 @@ header {
 	overflow: visible;
 }
 
+.headerRight {
+	right: 0;
+	height: 150px;
+	left: unset;
+	border-top-left-radius: 0;
+	border-top-right-radius: 15px;
+}
+
+.headerRight .headerOrder {
+	height: 90%;
+}
+
 .headerLeft img {
 	height: 150px;
 	margin: 10px 5px;
 }
 
 .headerMain {
-	width: 79%;
+	width: 58%;
 	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
 	text-align: center;
 	font-size: 20px;
 	background: var(--main);
@@ -116,7 +128,7 @@ header {
 	}
 }
 
-.headerMain .headerOrder {
+.headerOrder {
 	height: 100%;
 	width: auto;
 }
@@ -138,12 +150,11 @@ header {
 .headerMain h1 a, .headerMain h2 a {
 	text-decoration: none;
 	color: #EDFC02;
-	font-family: 'MonteCarlo', cursive !important;
 }
 
 @media(min-width: 1500px) {
 	.headerMain h1 a, .headerMain h2 a {
-		font-size: 35px;
+		font-size: 28px;
 	}
 }
 
@@ -207,7 +218,6 @@ menu ul li {
 
 .mainMenu__header {
 	text-align: center;
-	font-family: 'MonteCarlo', cursive;
 	font-size: 28px;
 	color: var(--link);
 	margin-top: 25px;
@@ -716,6 +726,11 @@ p img {
 	top: -15px;
 }
 
+.sidebar img {
+	display: block;
+	margin: 20px auto;
+}
+
 /* MOBILE */
 
 @media(max-width: 1700px) {
@@ -777,6 +792,14 @@ p img {
 		order: 1;
 		width: 100%;
 		border-top-left-radius: 15px;
+	}
+
+	.headerOrder, .headerRight {
+		display: none;
+	}
+
+	.headerMain .headerOrder {
+		display: block;
 	}
 }
 
@@ -1124,4 +1147,8 @@ select[name=archive-dropdown] {
 	* {
 		zoom: .98;
 	}
+}
+
+.menuMobile ul {
+	background: #0B71BB;
 }

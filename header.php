@@ -56,19 +56,20 @@
                     </h1>
                     <h2>
                         <a href="<?php echo home_url(); ?>">
-                            Koło nr 22 w Grudziądzu
+                            Koło Nr 22 w Grudziądzu
                         </a>
                     </h2>
                 </div>
-
-                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/herb-grudziadza.jpg' ?>" alt="medal-stulecia-bydgoszczy" />
-                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/pomnik-zolnieza.jpg' ?>" alt="medal-marszalka" />
 
                 <button class="hamburgerMenu" onclick="menuOpen()">
                     <span class="hamburgerMenuLine"></span>
                     <span class="hamburgerMenuLine"></span>
                     <span class="hamburgerMenuLine"></span>
                 </button>
+            </div>
+
+            <div class="headerRight">
+                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/herb-grudziadza.jpg' ?>" alt="medal-stulecia-bydgoszczy" />
             </div>
         </header>
 

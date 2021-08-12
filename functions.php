@@ -152,7 +152,7 @@ add_action( 'widgets_init', 'skmponz_widgets_init' );
  * Enqueue scripts and styles.
  */
 function skmponz_scripts() {
-	wp_enqueue_style( 'skmponz-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'skmponz-style', get_stylesheet_uri() . '?n=1', array(), _S_VERSION );
 
 	wp_enqueue_script( 'skmponz-main', get_template_directory_uri() . '/js/main.js', array('gsap'), _S_VERSION, true );
     wp_register_script( 'gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js', null, null, true );
