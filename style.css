@@ -1152,3 +1152,16 @@ select[name=archive-dropdown] {
 .menuMobile ul {
 	background: #0B71BB;
 }
+
+/* Update - 11.09.21 */
+.misjeTable tr {
+	height: 250px !important;
+}
+
+.misjeTable thead tr {
+	height: 80px !important;
+}
+
+.mainSite--udzialWMisjach .headerYellow {
+	text-align: center;
+}

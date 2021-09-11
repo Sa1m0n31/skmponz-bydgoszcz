@@ -51,7 +51,8 @@
                 <div class="headerMainTitle">
                     <h1>
                         <a href="<?php echo home_url(); ?>">
-                            Stowarzyszenie Kombatantów Misji Pokojowych ONZ
+                            Stowarzyszenie<br/>
+                            Kombatantów Misji Pokojowych ONZ
                         </a>
                     </h1>
                     <h2>
@@ -60,6 +61,9 @@
                         </a>
                     </h2>
                 </div>
+
+                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/swiatowa-federacja-weteranow.jpeg' ?>" alt="swiatowa-federacja-weteranow" />
+
 
                 <button class="hamburgerMenu" onclick="menuOpen()">
                     <span class="hamburgerMenuLine"></span>

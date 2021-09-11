@@ -6,8 +6,8 @@ get_header(); ?>
         <img class="tablicaImg" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/spichrze.jpg'?>" alt="tablica" />
     </div>
 
-    <div class="mainSite">
-        <h2 class="headerYellow">Udział członków SKMP ONZ koła nr 22 w Grudziądzu w misjach poza granicami kraju</h2>
+    <div class="mainSite mainSite--udzialWMisjach">
+        <h2 class="headerYellow">Zestawienie udziału członków z Koła Nr 22 SKMP ONZ w Grudziądzu w misjach i operacjach wojskowych poza granicami państwa</h2>
 
 
         <?php
