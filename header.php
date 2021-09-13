@@ -73,7 +73,7 @@
             </div>
 
             <div class="headerRight">
-                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/herb-grudziadza.jpg' ?>" alt="medal-stulecia-bydgoszczy" />
+                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/herb-grudziadza.png' ?>" alt="medal-stulecia-bydgoszczy" />
             </div>
         </header>
 
