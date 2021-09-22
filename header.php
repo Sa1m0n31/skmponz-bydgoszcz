@@ -62,9 +62,6 @@
                     </h2>
                 </div>
 
-                <img class="headerOrder" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/swiatowa-federacja-weteranow.jpeg' ?>" alt="swiatowa-federacja-weteranow" />
-
-
                 <button class="hamburgerMenu" onclick="menuOpen()">
                     <span class="hamburgerMenuLine"></span>
                     <span class="hamburgerMenuLine"></span>

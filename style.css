@@ -115,11 +115,15 @@ header {
 	font-size: 20px;
 	background: var(--main);
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	order: 2;
 	position: relative;
 	padding: 20px 50px;
+}
+
+.headerMain .headerOrder {
+	margin-right: 10%;
 }
 
 @media(min-width: 1000px) {
